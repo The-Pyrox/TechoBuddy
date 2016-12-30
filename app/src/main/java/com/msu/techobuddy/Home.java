@@ -77,6 +77,8 @@ public class Home extends AppCompatActivity
 
         } else if (id == R.id.nav_support) {
 
+        } else if (id == R.id.nav_developer) {
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

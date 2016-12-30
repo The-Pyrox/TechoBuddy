@@ -42,12 +42,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
 
         public int currentItem;
-        public ImageView itemImage;
         public TextView itemTitle;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            itemImage = (ImageView)itemView.findViewById(R.id.item_image);
             itemTitle = (TextView)itemView.findViewById(R.id.item_title);
 
 

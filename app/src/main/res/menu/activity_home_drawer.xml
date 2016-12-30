@@ -4,24 +4,33 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="Home" />
+            android:title="Home"
+            android:icon="@drawable/ic_face_black_24px"/>
         <item
             android:id="@+id/nav_life_at_techo"
-            android:title="Life At Techo" />
+            android:title="Life At Techo"
+            android:icon="@drawable/ic_party_mode_black_24px"/>
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Gallery" />
         <item
             android:id="@+id/nav_administration"
-            android:title="Administration" />
+            android:title="Administration"
+            android:icon="@drawable/ic_domain_black_24px"/>
 
         <item
             android:id="@+id/nav_about_us"
-            android:title="About Us" />
+            android:title="About Us"
+            android:icon="@drawable/ic_people_black_24px"/>
         <item
             android:id="@+id/nav_support"
-            android:title="Support" />
+            android:title="Support"
+            android:icon="@drawable/ic_thumb_up_black_24px"/>
+        <item
+            android:id="@+id/nav_developer"
+            android:icon="@drawable/ic_code_black_24px"
+            android:title="Developer" />
     </group>
 
 </menu>
