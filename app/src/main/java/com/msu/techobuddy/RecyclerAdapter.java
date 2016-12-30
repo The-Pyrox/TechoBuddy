@@ -1,12 +1,17 @@
 package com.msu.techobuddy;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import static com.msu.techobuddy.R.color.Pyrox;
 
 /**
  * Created by Poojan on 12/25/2016.
@@ -23,7 +28,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             "Learning Hub"};
 
 
-    private int[] images = { R.drawable.techozine,
+    /*private int[] images = { R.drawable.techozine,
             R.drawable.techozine,
             R.drawable.techozine,
             R.drawable.techozine,
@@ -31,9 +36,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             R.drawable.techozine,
             R.drawable.techozine
 
-    };
+    };*/
 
     class ViewHolder extends RecyclerView.ViewHolder{
+
 
         public int currentItem;
         public ImageView itemImage;
@@ -69,7 +75,26 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
         viewHolder.itemTitle.setText(titles[i]);
-        viewHolder.itemImage.setImageResource(images[i]);
+        if (i==0)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#E53935"));
+        else if (i==1)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#9C27B0"));
+        else if (i==2)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#D4E157"));
+        else if (i==3)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        else if (i==4)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#43A047"));
+        else if (i==5)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#43A047"));
+        else if (i==6)
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#5E35B1"));
+
+
+
+
+
+
     }
 
     @Override

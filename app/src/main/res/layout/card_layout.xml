@@ -8,6 +8,7 @@
     android:layout_margin="5dp"
     card_view:cardElevation="3dp"
     card_view:contentPadding="4dp"
+
     android:foreground="?selectableItemBackground"
     android:clickable="true" >
 
@@ -17,12 +18,6 @@
         android:layout_height="wrap_content"
         android:padding="16dp" >
 
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/item_image"
-            />
 
         <TextView
             android:layout_width="wrap_content"
