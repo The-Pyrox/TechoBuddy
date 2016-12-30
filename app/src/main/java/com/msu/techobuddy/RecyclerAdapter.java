@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import static com.msu.techobuddy.R.color.Pyrox;
+
 
 /**
  * Created by Poojan on 12/25/2016.
@@ -28,7 +28,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             "Learning Hub"};
 
 
-    /*private int[] images = { R.drawable.techozine,
+    /*private int[] images = { R.drawable.faculties_2,
             R.drawable.techozine,
             R.drawable.techozine,
             R.drawable.techozine,
@@ -42,11 +42,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
 
         public int currentItem;
+        public ImageView imageView;
         public TextView itemTitle;
 
         public ViewHolder(View itemView) {
             super(itemView);
             itemTitle = (TextView)itemView.findViewById(R.id.item_title);
+            imageView = (ImageView)itemView.findViewById(R.id.home_image);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +75,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
         viewHolder.itemTitle.setText(titles[i]);
+        //viewHolder.imageView.setImageResource(images[i]);
         if (i==0)
             viewHolder.itemView.setBackgroundColor(Color.parseColor("#E53935"));
         else if (i==1)
