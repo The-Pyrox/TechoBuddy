@@ -7,4 +7,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_developer">Developer</string>
+    <string name="title_activity_life_at_techo">LifeAtTecho</string>
+    <string name="title_activity_administration">Administration</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_support">Support</string>
 </resources>

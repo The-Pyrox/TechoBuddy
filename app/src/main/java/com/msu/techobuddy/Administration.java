@@ -9,12 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Developer extends AppCompatActivity {
+public class Administration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_developer);
+        setContentView(R.layout.activity_administration);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,7 +29,7 @@ public class Developer extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent i = new Intent(this,Home.class);
+            Intent i = new Intent(this, Home.class);
             startActivity(i);
             finish();
         }

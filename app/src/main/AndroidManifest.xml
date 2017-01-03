@@ -20,8 +20,20 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Developer"
-            android:label="@string/title_activity_developer"
+            android:name=".LifeAtTecho"
+            android:label="@string/title_activity_life_at_techo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Administration"
+            android:label="@string/title_activity_administration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Support"
+            android:label="@string/title_activity_support"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

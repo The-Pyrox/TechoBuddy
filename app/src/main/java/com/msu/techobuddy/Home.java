@@ -68,21 +68,27 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            Intent i = new Intent(this,Home.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_life_at_techo) {
+            Intent i  = new Intent(this,LifeAtTecho.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_gallery) {
 
+
         } else if (id == R.id.nav_administration) {
-
-        } else if (id == R.id.nav_about_us) {
-
-        } else if (id == R.id.nav_support) {
-
-        } else if (id == R.id.nav_developer) {
-            Intent i = new Intent(this,Developer.class);
+            Intent i = new Intent(this,Administration.class);
             startActivity(i);
 
+        } else if (id == R.id.nav_about_us) {
+            Intent i = new Intent(this,AboutUs.class);
+            startActivity(i);
+
+        } else if (id == R.id.nav_support) {
+            Intent i = new Intent(this,Support.class);
+            startActivity(i);
 
         }
 
