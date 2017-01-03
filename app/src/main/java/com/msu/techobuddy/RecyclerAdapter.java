@@ -1,7 +1,9 @@
 package com.msu.techobuddy;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.wifi.p2p.WifiP2pManager;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -40,24 +42,41 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
-
+        private final Context context;
         public int currentItem;
+        Intent intent;
+
         public ImageView imageView;
         public TextView itemTitle;
 
+
         public ViewHolder(View itemView) {
             super(itemView);
+            context = itemView.getContext();
             itemTitle = (TextView)itemView.findViewById(R.id.item_title);
             imageView = (ImageView)itemView.findViewById(R.id.home_image);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
-                    int position = getAdapterPosition();
 
-                    Snackbar.make(v, "Click detected on item " + position,
-                            Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    int position = getAdapterPosition();
+                    if (position == 0){
+                       intent = new Intent(context,Techozine.class);
+                    } else if (position == 1){
+                        intent = new Intent(context,Faculties.class);
+                    }else if (position == 2){
+                        intent = new Intent(context,Placements.class);
+                    }else if (position == 3){
+                        intent = new Intent(context,Events.class);
+                    }else if (position == 4){
+                        intent = new Intent(context,Clubs.class);
+                    }else if (position == 5){
+                        intent = new Intent(context,TechoMaterial.class);
+                    }else if (position == 6){
+                        intent = new Intent(context,LearningHub.class);
+                    }
+                    context.startActivity(intent);
 
                 }
             });
@@ -90,16 +109,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             viewHolder.itemView.setBackgroundColor(Color.parseColor("#43A047"));
         else if (i==6)
             viewHolder.itemView.setBackgroundColor(Color.parseColor("#5E35B1"));
-
-
-
-
-
-
     }
 
     @Override
     public int getItemCount() {
         return titles.length;
     }
+
+
 }

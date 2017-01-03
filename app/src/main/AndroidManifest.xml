@@ -34,6 +34,34 @@
         <activity
             android:name=".Support"
             android:label="@string/title_activity_support"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TechoMaterial"
+            android:label="@string/title_activity_techo_material"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Techozine"
+            android:label="@string/title_activity_techozine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Faculties"
+            android:label="@string/title_activity_faculties"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Placements"
+            android:label="@string/title_activity_placements"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Events"
+            android:label="@string/title_activity_events"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Clubs"
+            android:label="@string/title_activity_clubs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LearningHub"
+            android:label="@string/title_activity_learning_hub"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

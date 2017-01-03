@@ -11,4 +11,11 @@
     <string name="title_activity_administration">Administration</string>
     <string name="title_activity_about_us">AboutUs</string>
     <string name="title_activity_support">Support</string>
+    <string name="title_activity_techo_material">TechoMaterial</string>
+    <string name="title_activity_techozine">Techozine</string>
+    <string name="title_activity_faculties">Faculties</string>
+    <string name="title_activity_placements">Placements</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_clubs">Clubs</string>
+    <string name="title_activity_learning_hub">LearningHub</string>
 </resources>
